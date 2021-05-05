@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Apr 19 00:04:30 2021
+# Process ID: 14556
+# Current directory: C:/Users/rajat/Downloads/Memory Design Project/MDT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3760 C:\Users\rajat\Downloads\Memory Design Project\MDT\MDT.xpr
+# Log file: C:/Users/rajat/Downloads/Memory Design Project/MDT/vivado.log
+# Journal file: C:/Users/rajat/Downloads/Memory Design Project/MDT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/rajat/Downloads/Memory Design Project/MDT/MDT.xpr}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/rajat/Downloads/Memory Design Project/MDT/MDT.srcs/sim_1/new/MarchX_tb.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MarchX_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source MarchX_tb.tcl
+close_sim
+launch_simulation
+source MarchX_tb.tcl
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/rajat/Downloads/Memory Design Project/MDT/MDT.srcs/sim_1/new/MarchY_tb.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MarchY_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source MarchY_tb.tcl
+close_sim
+launch_simulation
+source MarchY_tb.tcl
+close_sim
+launch_simulation
+source MarchY_tb.tcl
+close_sim
+launch_simulation
+source MarchY_tb.tcl
+close_sim
