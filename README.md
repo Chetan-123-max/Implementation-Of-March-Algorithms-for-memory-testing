@@ -22,3 +22,7 @@ neighbourhood pattern-sensitive.
 MARCH being a deterministic pattern generator is usually employed in BIST
 architectures which in comparison with the pseudo random generators provide a better
 fault coverage in testing of the embedded memories.
+
+How to run?
+If you have the vivado xilinx tool installed: Just download the repo and run the MDT.xpr file to launch the project in vivado xilinx tool.
+Otherwise download the verilog files from the MDT.srcs folder to run on any other platform
